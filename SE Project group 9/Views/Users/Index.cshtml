@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Group9_006_iCAREAPP.Models.User>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Admin.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserLogin.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Worker.RoleId)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Admin.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserLogin.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Worker.RoleId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.UserId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.UserId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.UserId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

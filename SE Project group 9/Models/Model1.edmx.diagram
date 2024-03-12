@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="da874d5fa8644cb0830dbd2aafff415c" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.Admin" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.DocMetaData" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.GeoCode" Width="1.5" PointX="9" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.PatientRecord" Width="1.5" PointX="11.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.TreatmentRecord" Width="1.5" PointX="13.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.User" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.UserLogin" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.UserRole" Width="1.5" PointX="3.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.Worker" Width="1.5" PointX="6" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.DrugDictionary" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.Login" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group9_006_iCAREDBModel.ModificationHistory" Width="1.5" PointX="13.5" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_Admin_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_DocMetaData_PatientRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_DocMetaData_Worker" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_ModificationHistory_DocMetaData" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_PatientRecord_GeoCode" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_PatientRecord_Worker" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_TreatmentRecord_PatientRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_TreatmentRecord_Worker" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_UserLogin_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_Worker_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_Worker_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="Group9_006_iCAREDBModel.FK_ModificationHistory_Worker" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,58 @@
+﻿@model Group9_006_iCAREAPP.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>User</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Admin.UserId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Admin.UserId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UserLogin.UserName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UserLogin.UserName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Worker.RoleId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Worker.RoleId)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

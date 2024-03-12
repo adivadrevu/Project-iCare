@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WorkerPage</title>
+    <style>
+        .menu-items {
+            font-family: system-ui;
+            border: 1px solid #e1e1e1;
+            padding: 10px;
+            border-radius: 18px;
+            background: aliceblue;
+        }
+        .menu-list {
+            
+        }
+        .img-size {
+            width: 50rem;
+            height: 50rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-sm-12">
+
+        <div class="col-sm-6">
+            <div class="menu-list">
+                <h2 class="menu-items">@Html.ActionLink("Register Patients", "Index", "PatientRecords")</h2>
+                <p>Manage Patients.</p>
+            </div>
+            <div class="menu-list">
+                <h2 class="menu-items">@Html.ActionLink("Assign Patient", "Index", "Patientrecords")</h2>
+                <p>Assign Patients from Active Patients.</p>
+            </div>
+            <div class="menu-list">
+                <h2 class="menu-items">
+                    @Html.ActionLink("My Board", "Index", "TreatmentRecords")
+
+                </h2>
+                <i class="fa fa-clipboard" aria-hidden="true"></i>
+
+                <p>View My Board.</p>
+            </div>
+            <div class="menu-list">
+                <h2 class="menu-items">@Html.ActionLink("Meta data of docs", "Index", "DocMetadatas")</h2>
+                <p>All Meta data.</p>
+            </div>
+            <div class="menu-list">
+                <h2 class="menu-items">@Html.ActionLink("Display Pallete", "Pallete", "DocumentManagement")</h2>
+                <p>Display Pallete.</p>
+            </div>
+            <div class="menu-list">
+                <h2 class="menu-items">@Html.ActionLink("Manage Documents and Import Images", "Index", "DocumentManagement")</h2>
+                <p>Manage Documents.</p>
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img src="~/icareSq.png" alt="Avatar" class="avatar img-size">
+        </div>
+    </div>
+
+</body>
+</html>

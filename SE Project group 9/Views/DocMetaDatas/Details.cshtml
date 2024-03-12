@@ -1,0 +1,58 @@
+﻿@model Group9_006_iCAREAPP.Models.DocMetaData
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>DocMetaData</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.DocName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DocName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DocCreationDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DocCreationDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PatientRecord.TreatmentId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PatientRecord.TreatmentId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Worker.RoleId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Worker.RoleId)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.DocId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

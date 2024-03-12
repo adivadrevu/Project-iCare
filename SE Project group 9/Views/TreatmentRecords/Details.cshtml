@@ -1,0 +1,58 @@
+﻿@model Group9_006_iCAREAPP.Models.TreatmentRecord
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>TreatmentRecord</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TreatmentDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TreatmentDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PatientRecord.TreatmentId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PatientRecord.TreatmentId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Worker.RoleId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Worker.RoleId)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TreatmentId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
